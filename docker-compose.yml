@@ -11,7 +11,7 @@ services:
       VIRTUAL_PORT: ${PORT}
       LETSENCRYPT_HOST: ${SSL_DOMAIN}    
       EULA: "TRUE"
-      MEMORY: "512M"
+      MEMORY: ${MEMORY}
       TZ: "Asia/Bangkok"
       VERSION: ${VERSION}
     networks:
