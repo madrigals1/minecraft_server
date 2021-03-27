@@ -13,6 +13,7 @@ services:
       EULA: "TRUE"
       MEMORY: "512M"
       TZ: "Asia/Bangkok"
+      VERSION: ${VERSION}
     networks:
       - proxy
     volumes:
