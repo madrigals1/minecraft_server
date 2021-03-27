@@ -12,6 +12,7 @@ services:
       LETSENCRYPT_HOST: ${SSL_DOMAIN}    
       EULA: "TRUE"
       MEMORY: "512M"
+      TZ: "Asia/Bangkok"
     networks:
       - proxy
 
