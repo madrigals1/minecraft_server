@@ -15,12 +15,14 @@ services:
       TZ: "Asia/Bangkok"
       VERSION: ${VERSION}
       SERVER_NAME: ${SERVER_NAME}
+      ONLINE_MODE: "FALSE"
+      OVERRIDE_SERVER_PROPERTIES: "TRUE"
     networks:
-      - proxy
+      - https
     volumes:
       - "./data:/data"
 
 networks:
-  proxy:
+  https:
     external:
-      name: ${PROXY_NETWORK}
+      name: ${HTTPS_NETWORK}
