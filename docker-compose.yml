@@ -17,6 +17,8 @@ services:
       SERVER_NAME: ${SERVER_NAME}
       ONLINE_MODE: "FALSE"
       OVERRIDE_SERVER_PROPERTIES: "TRUE"
+      OPS: ${OPS}
+      MOTD: ${MOTD}
     networks:
       - https
     volumes:
