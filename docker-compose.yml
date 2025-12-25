@@ -4,6 +4,7 @@ services:
     container_name: minecraft
     ports:
       - "${PORT}:25565"
+      - "${RCON_PORT}:25575"
     environment:
       EULA: "TRUE"
       MEMORY: ${MEMORY}
