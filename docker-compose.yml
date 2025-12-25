@@ -21,5 +21,5 @@ services:
 
 networks:
   https:
-    external:
-      name: ${HTTPS_NETWORK}
+    name: ${HTTPS_NETWORK}
+    external: true
