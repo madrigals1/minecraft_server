@@ -9,7 +9,7 @@ services:
     environment:
       EULA: "TRUE"
       MEMORY: ${MEMORY}
-      TZ: "Asia/Bangkok"
+      TZ: ${TZ}
       VERSION: ${VERSION}
       SERVER_NAME: ${SERVER_NAME}
       ONLINE_MODE: "FALSE"
