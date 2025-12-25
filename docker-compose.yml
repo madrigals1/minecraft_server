@@ -12,7 +12,7 @@ services:
       TZ: ${TZ}
       VERSION: ${VERSION}
       SERVER_NAME: ${SERVER_NAME}
-      ONLINE_MODE: "FALSE"
+      ONLINE_MODE: ${ONLINE_MODE}
       OVERRIDE_SERVER_PROPERTIES: "TRUE"
       OPS: ${OPS}
       MOTD: ${MOTD}
