@@ -5,14 +5,8 @@ services:
     ports:
       - "${PORT}:25565"
       - "${RCON_PORT}:25575"
-    environment:
-      MEMORY: ${MEMORY}
-      TZ: ${TZ}
-      VERSION: ${VERSION}
-      SERVER_NAME: ${SERVER_NAME}
-      ONLINE_MODE: ${ONLINE_MODE}
-      OPS: ${OPS}
-      MOTD: ${MOTD}
+    env_file:
+      - .env
     networks:
       - https
     volumes:
